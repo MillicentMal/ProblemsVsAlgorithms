@@ -1,0 +1,3 @@
+By using the merge sort function, there is an O(log(n)) time complexity. 
+Creating the two different numbers, there is a time complexity of O(n). 
+Since the worst case is O(n(log(n))) this is the time complexity for the program.

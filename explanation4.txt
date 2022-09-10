@@ -1,0 +1,4 @@
+The space complexity is O(1) 
+because the sorting is done in place.
+
+The time complexity is O(n) and the sorting is done in a single traversal. 

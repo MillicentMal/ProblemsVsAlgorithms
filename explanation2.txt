@@ -1,0 +1,4 @@
+The space complexity is O(1) as this search is done in place. 
+
+Time complexity is O(log(n)) because the search is a binary search.
+At every iteration the list is cut in half until target is found. 

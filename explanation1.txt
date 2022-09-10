@@ -1,0 +1,6 @@
+The square root function makes use of the binary search algorithm. 
+The number given is cut in half, and then the result is squared. 
+If this result is greater than the number, then the upper bound becomes 
+the half that was squared before - 1. Then this is added to a start and 
+halved again. 
+This process leads to a time complexity of O(log(n)).

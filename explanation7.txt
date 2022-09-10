@@ -1,0 +1,5 @@
+The time complexity for the entire program's different functions is O(n).
+
+The time complexity for split_path is O(n), from the split function on Python. 
+
+Space complexity is also O(n), worst case. 

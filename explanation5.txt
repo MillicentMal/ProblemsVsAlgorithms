@@ -1,0 +1,4 @@
+According to research, Insert and find costs O(key_length), however, the memory requirements 
+of Trie is O(ALPHABET_SIZE * key_length * N) where N is the number of keys.
+
+The time complexity pf searching for a word is O(m * n) when m is the length of the string, and n is the number of words. 
