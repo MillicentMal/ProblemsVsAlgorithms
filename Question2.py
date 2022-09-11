@@ -7,6 +7,8 @@ def rotated_array_search(input_list, number):
     Returns:
        int: Index or -1
     """
+    if len(input_list) == 0:
+        return -1
     end = len(input_list)
     start = 0
     while start < end:
@@ -46,3 +48,10 @@ test_function([[6, 7, 8, 9, 10, 1, 2, 3, 4], 1])
 test_function([[6, 7, 8, 1, 2, 3, 4], 8])
 test_function([[6, 7, 8, 1, 2, 3, 4], 1])
 test_function([[6, 7, 8, 1, 2, 3, 4], 10])
+
+# edge case: sorted array with no value found
+# expected output -1
+test_function([[5, 1, 2, 3, 4], 10])
+
+# empty list
+test_function([[], -1])

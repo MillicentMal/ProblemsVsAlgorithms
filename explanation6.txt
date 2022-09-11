@@ -1,1 +1,2 @@
 The time complexity here is O(n), and this is done in a single traversal. 
+Space complexity is O(1). No new data structure is recreated

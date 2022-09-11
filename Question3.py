@@ -1,4 +1,7 @@
 
+from typing import List
+
+
 def mergesort(items):
     """
     Source: Udacity Sorting Algorithms lesson
@@ -36,7 +39,11 @@ def merge(left, right):
         
     return merged
 
-def rearrange_digits(input_list):
+def rearrange_digits(input_list):       
+    if len(input_list) == 0:
+        return 0, 0
+    if len(input_list) == 1:
+        return input_list[0], 0
     new = mergesort(input_list)
     digit1 = ""
     digit2 = ""
@@ -56,6 +63,17 @@ def test_function(test_case):
     else:
         print("Fail")
 
+
+# Test cases 
 test_function([[1, 2, 3, 4, 5], [542, 31]])
 test_case = [[4, 6, 2, 5, 9, 8], [964, 852]]
 test_function(test_case)
+
+# edge case 1: Null list
+test_function([[], [0, 0]])
+
+# edge case 2: One input
+test_function([[5], [5, 0]])
+
+# test case 3: 
+test_function([[1,3,4,5,6,7,8,9,0,11,34,5,6,7,7], [349776530, 11876541]])

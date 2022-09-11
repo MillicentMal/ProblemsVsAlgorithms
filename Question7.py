@@ -92,3 +92,18 @@ print(router.lookup("/home")) # should print 'not found handler' or None if you 
 print(router.lookup("/home/about")) # should print 'about handler'
 print(router.lookup("/home/about/")) # should print 'about handler' or None if you did not handle trailing slashes
 print(router.lookup("/home/about/me")) # should print 'not found handler' or None if you did not implement one
+
+
+print("-------------------------------------------------------------------------------------------------------------------------")
+routing = Router("root handler")
+routing.add_handler("/udapeople/users/id", "user information")
+
+print(routing.lookup("/")) # should print 'root handler'
+print(routing.lookup("/udapeople/users")) # should print 'not found handler' or None if you did not implement one
+print(routing.lookup("/udapeople/users/id")) # should print 'user information'
+
+
+
+
+#  empty route input : returns root handler
+print(router.lookup("")) # should print 'root handler'
